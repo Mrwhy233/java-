@@ -8,11 +8,11 @@ import java.awt.*;
 * 工具方法*/
 public class GameUtil {
     //地雷个数
-    static int RAY_MAX = 5;
+    static int RAY_MAX = 100;
     //地图的宽
-    static int MAP_W= 11;
+    static int MAP_W= 36;
     //地图的高
-    static int MAP_H = 11;
+    static int MAP_H = 17;
     //雷区偏移量
     static int OFFSET = 45;
     //格子边长
@@ -28,7 +28,9 @@ public class GameUtil {
     static boolean LEFT = false;
     static boolean RIGHT = false;
     //游戏状态 0 游戏中 1胜利 2失败
-    static int state = 0;
+    static int state = 3;
+    //游戏难度
+    static  int level;
     //倒计时
     static long START_TIME;
     static long END_TIME;

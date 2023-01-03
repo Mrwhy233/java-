@@ -2,7 +2,7 @@ package com.sxt;
 /*初始化地雷*/
 public class BottomRay {
     //存放坐标
-    int []rays = new int [GameUtil.RAY_MAX*2];//相邻两个数为地雷坐标
+    static int []rays = new int [GameUtil.RAY_MAX*2];//相邻两个数为地雷坐标
     //地理坐标
     int x,y;
     //是否放置T表示放置，F表示不可放置
