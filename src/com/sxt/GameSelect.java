@@ -26,15 +26,16 @@ boolean hard(){
 }
 
     void paintSelf(Graphics g){
-    g.setColor(Color.black);
+    g.setColor(Color.red);
+        g.drawImage(GameUtil.bac,0,0,500,500,null);
         g.drawRect(100,50 ,300,100 );
-        GameUtil.drawWord(g,"简单",220 ,100,30,Color.black);
+        GameUtil.drawWord(g,"EASY",220 ,100,30,Color.blue);
 
         g.drawRect(100,200 ,300,100 );
-        GameUtil.drawWord(g,"普通",220 ,250,30,Color.black);
+        GameUtil.drawWord(g,"COMMON",220 ,250,30,Color.blue);
 
         g.drawRect(100,350 ,300,100 );
-        GameUtil.drawWord(g,"困难",220 ,400,30,Color.black);
+        GameUtil.drawWord(g,"HARD",220 ,400,30,Color.blue);
     }
     void hard(int level){
     switch (level){

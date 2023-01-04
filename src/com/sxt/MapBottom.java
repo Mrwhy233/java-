@@ -63,7 +63,7 @@ public class MapBottom {
         GameUtil.drawWord(g,""+(GameUtil.RAY_MAX-GameUtil.FLAG_NUM),GameUtil.OFFSET,2*GameUtil.OFFSET,30,Color.red);
         GameUtil.drawWord(g,""+(GameUtil.END_TIME-GameUtil.START_TIME)/1000,
                 GameUtil.OFFSET+GameUtil.SQUARE_LENGTH*(GameUtil.MAP_W-1),
-                2*GameUtil.OFFSET,30,Color.red);
+                2*GameUtil.OFFSET,30,Color.black);
         switch(GameUtil.state){
             case 0:
                 GameUtil.END_TIME = System.currentTimeMillis();

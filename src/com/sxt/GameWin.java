@@ -20,6 +20,7 @@ public class GameWin extends JFrame {
         this.setVisible(true);//可见
         if(GameUtil.state==3){
             this.setSize(500,500);
+
         }else{
             this.setSize(width,height);//窗口大小
         }
@@ -105,13 +106,14 @@ public class GameWin extends JFrame {
     public void paint(Graphics g) {
         if(GameUtil.state==3){
             g.setColor(Color.white);
+
             g.fillRect(0,0,500,500);
             gameSelect.paintSelf(g);
         }else {
             offScreenImage = this.createImage(width, height);
             Graphics gImage = offScreenImage.getGraphics();
             //设置背景颜色
-            gImage.setColor(Color.orange);
+            gImage.setColor(Color.yellow);
             gImage.fillRect(0, 0, width, height);
             mapBottom.paintSelf(gImage);
             mapTop.paintSelf(gImage);

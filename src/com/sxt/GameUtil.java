@@ -48,6 +48,7 @@ public class GameUtil {
     static Image face = Toolkit.getDefaultToolkit().getImage("imgs/face0.gif");
     static Image over = Toolkit.getDefaultToolkit().getImage("imgs/face3.gif");
     static Image win = Toolkit.getDefaultToolkit().getImage("imgs/face4.gif");
+    static Image bac = Toolkit.getDefaultToolkit().getImage("imgs/R.png");
     static Image[] images = new Image[9];
     static{
         for(int i = 0;i<=8;i++){
