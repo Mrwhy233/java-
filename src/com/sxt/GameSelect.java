@@ -24,6 +24,7 @@ boolean hard(){
     }
     return false;
 }
+
     void paintSelf(Graphics g){
     g.setColor(Color.black);
         g.drawRect(100,50 ,300,100 );
